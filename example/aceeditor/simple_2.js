@@ -9,7 +9,7 @@ Ext.require([ 'Ext.ux.aceeditor.Panel' ]);
 
 Ext.onReady(function()
 {
-	new Ext.Viewport({
+	Ext.create('Ext.Viewport', {
 		layout: 'border',
 		items: [ {
 			region: 'center',
