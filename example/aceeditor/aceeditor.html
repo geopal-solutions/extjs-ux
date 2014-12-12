@@ -4,12 +4,33 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>ACE Editor Example</title>  
     <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/extjs-4.1.1-gpl/resources/css/ext-all.css" />
-    <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/extjs-4.1.1-gpl/examples/shared/example.css" />  
+    <link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/extjs-4.1.1-gpl/examples/shared/example.css" />
+    <script type="text/javascript" src="http://extjs.cachefly.net/extjs-4.1.1-gpl/bootstrap.js"></script>
+    <!--link rel="stylesheet" type="text/css" href="http://extjs.cachefly.net/ext/gpl/5.0.1/packages/ext-theme-neptune/build/resources/ext-theme-neptune-all.css" />
+    <script type="text/javascript" src="http://extjs.cachefly.net/ext/gpl/5.0.1/ext-all-debug.js"></script>
+    <script type="text/javascript" src="http://extjs.cachefly.net/ext/gpl/5.0.1/packages/ext-theme-neptune/build/ext-theme-neptune.js"></script-->
+
+    <script>
+        Ext.Loader.setConfig({
+            enabled: true,
+            paths: {
+                'Ext.ux': 'http://extjs.cachefly.net/extjs-4.1.1-gpl/examples/ux/statusbar',
+                //'Ext.ux': 'http://extjs.cachefly.net/ext/gpl/5.0.1/examples/ux/statusbar',
+                'Ext.ux.aceeditor': '../../ux/aceeditor'
+            }
+        });
+    </script>
 </head>
 <body>
     <h1>ACE Editor Example</h1>
     <p>The js is not minified so it is readable. See <a href="aceeditor.js">aceeditor.js</a>.</p> 
-    <p>Note: Works with 4.1.1</p>
+    <p>
+        Notes:<br/>
+        <ul>
+            <li>Works with ExtJS 4.1.1 and 5.0.1</li>
+            <li>Tested against ACE versions 0.2.0 and 1.1.8</li>
+        </ul>
+    </p>
      
 <pre id="pre_1" class="x-hide">function foo(items) {
     var i;
@@ -20,9 +41,9 @@
  	<!--
     <script type="text/javascript" src="../../../../ext/extjs-4.1.0/ext-debug.js"></script>
    -->
-    <script type="text/javascript" src="http://extjs.cachefly.net/extjs-4.1.1-gpl/bootstrap.js"></script>
-     
-    <script src="../../ux/aceeditor/ace-0.2.0/src/ace.js" type="text/javascript" charset="utf-8"></script>     
+    
+    <!--script src="../../ux/aceeditor/ace-0.2.0/src/ace.js" type="text/javascript" charset="utf-8"></script--> 
+    <script src="../../ux/aceeditor/ace-1.1.8/src/ace.js" type="text/javascript" charset="utf-8"></script>     
     <script type="text/javascript" src="aceeditor.js"></script>       
 </body>
 </html>

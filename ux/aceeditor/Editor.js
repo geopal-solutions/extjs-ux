@@ -56,8 +56,8 @@ Ext.define('Ext.ux.aceeditor.Editor', {
         me.editor.setShowPrintMargin(me.printMargin);
         me.editor.setPrintMarginColumn(me.printMarginColumn);
         me.editor.setHighlightActiveLine(me.highlightActiveLine);
-        me.getSession().setTabSize(me.tabSize);
-        me.getSession().setUseSoftTabs(me.useSoftTabs);
+        me.editor.getSession().setTabSize(me.tabSize);
+        me.editor.getSession().setUseSoftTabs(me.useSoftTabs);
         me.setValue(me.sourceCode);
 
         me.editor.getSession().on('change', function()
@@ -100,7 +100,7 @@ Ext.define('Ext.ux.aceeditor.Editor', {
     
     setMode: function(mode)
     {
-        this.getSession().setMode("ace/mode/" + mode);
+        this.editor.getSession().setMode("ace/mode/" + mode);
     },
     
     getValue: function()

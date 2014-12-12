@@ -1,11 +1,3 @@
-Ext.Loader.setConfig({
-    enabled: true,
-    paths: {
-        'Ext.ux': 'http://extjs.cachefly.net/extjs-4.1.1-gpl/examples/ux/statusbar',
-        'Ext.ux.aceeditor': '../../ux/aceeditor'
-    }
-});
-
 Ext.require(['Ext.ux.aceeditor.Panel', 'Ext.ux.StatusBar']);
 
 Ext.onReady(function()
